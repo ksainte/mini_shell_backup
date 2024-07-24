@@ -1,0 +1,42 @@
+
+// {
+ 
+//     "version": "0.2.0",
+//     "configurations": [
+//         {
+// 			"name": "debug macos",
+// 			"type": "cppdbg",
+// 			"request": "launch",
+// 			"program": "${workspaceRoot}/minishell",
+// 			"args": ["4","5","6","1","2","3"],
+// 			"stopAtEntry": false,
+// 			"cwd": "${workspaceFolder}",
+// 			"MIMode": "lldb",
+// 		}
+//     ]
+// }
+
+{
+    
+    "version": "0.2.0",
+    "configurations": [
+        {
+			"name": "debug cube3d Linux",
+			"type": "cppdbg",
+			"request": "launch",
+			"program": "${workspaceRoot}/minishell",
+			"stopAtEntry": false,
+			"cwd": "${workspaceFolder}",
+			"MIMode": "gdb",
+			"miDebuggerPath": "/usr/bin/gdb",
+			"setupCommands": 
+			[
+			{
+				"description": "Enable pretty-printing for gdb",
+				"text": "-enable-pretty-printing",
+				"ignoreFailures": true
+			}
+			]
+		}
+    ]
+}
